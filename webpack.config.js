@@ -10,12 +10,12 @@ const HtmlWebpackPluginConfig =  new HtmlWebpackPlugin({
 
 module.exports = {
 	devtool: 'cheap-module-source-map',
-	entry: path.resolve(__dirname, 'src/index'),
+	entry: [ 'webpack-hot-middleware/client?reload=true',path.resolve(__dirname, 'src/root-render')],
 	target: 'web',
 	output: {
 		path: __dirname+ '/dist',
 		publicPath: '/',
-		filename: 'index.bundle.js'
+		filename: 'root-render.bundle.js'
 	},
 	devServer: {
 		contentBase: path.resolve(__dirname, 'src')

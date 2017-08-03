@@ -1,8 +1,8 @@
 {
-  "name": "hello-world-react",
-  "version": "1.0.0",
+  "name": "react-lib-boilerplate",
+  "version": "1.0.7",
   "description": "A simple hello world application to know how babel and webpack support a react app",
-  "main": "index.js",
+  "main": "lib/index.js",
   "author": "Pranay Gandhi",
   "license": "MIT",
   "scripts": {
